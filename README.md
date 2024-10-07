@@ -10,6 +10,9 @@ A desktop shortcut and shell script to launch the XI apps on linux
 7. right click server_launcher.sh --> properites --> permissions --> set owner: read & write --> set group: read & write --> set others: read-only --> tick allow executing file as a program
 8. now you can launch the server from one desktop shortcut
 
+Note: if you followed the server setup then your server path should look something like
+/home/<user_name>/server
+
 ![server_launcher_per](https://github.com/user-attachments/assets/c720a72b-39a1-4845-94c4-4bfcb242ae7b)
 
 ![server_launcher_pic_1](https://github.com/user-attachments/assets/55825f9a-1156-44fc-82c8-a743cbfee8d8)
