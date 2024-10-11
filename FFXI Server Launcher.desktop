@@ -1,9 +1,9 @@
 [Desktop Entry]
-Name=FFXI Server Odin
+Name=FFXI Server Launcher
 Comment=Use the command line
 Keywords=shell;prompt;command;commandline;cmd;
 TryExec=gnome-terminal
-Exec=gnome-terminal --command /home/ffxi/ffxi_odin/server_launcher.sh
+Exec=gnome-terminal --window -- bash -c "~/FFXI-Server-Launcher/server_launcher.sh"
 Icon=org.gnome.Terminal
 Type=Application
 Categories=GNOME;GTK;System;TerminalEmulator;
