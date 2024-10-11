@@ -1,10 +1,8 @@
 #!/bin/bash
-gnome-terminal --tab --title="xi_connect" --command="bash -c ' cd /home/ffxi/ffxi_odin/server;/home/ffxi/ffxi_odin/server/xi_connect'"
-sleep 1
-gnome-terminal --tab --title="xi_map" --command="bash -c 'cd /home/ffxi/ffxi_odin/server;/home/ffxi/ffxi_odin/server/xi_map'"
-sleep 1
-gnome-terminal --tab --title="xi_search" --command="bash -c 'cd /home/ffxi/ffxi_odin/server;/home/ffxi/ffxi_odin/server/xi_search'"
-sleep 1
-gnome-terminal --tab --title="xi_world" --command="bash -c 'cd /home/ffxi/ffxi_odin/server;/home/ffxi/ffxi_odin/server/xi_world'"
-sleep 1
-gnome-terminal --tab --title="FFXIAHBOT" --command="bash -c 'cd /home/ffxi/ffxi_odin/ffxiahbot/bin;uv run ffxiahbot broker --inp-csv items.csv --buy-items --sell-items'"
+xi_dir='~/server/'
+ah_dir='~/ffxiahbot/bin/'
+gnome-terminal --tab --title="XI Connect" -- bash -c "cd "$xi_dir";"$xi_dir"xi_connect; exec bash"
+gnome-terminal --tab --title="XI Map"     -- bash -c "cd "$xi_dir";"$xi_dir"xi_map; exec bash"
+gnome-terminal --tab --title="XI Search"  -- bash -c "cd "$xi_dir";"$xi_dir"xi_search; exec bash"
+gnome-terminal --tab --title="XI World"   -- bash -c "cd "$xi_dir";"$xi_dir"xi_world; exec bash"
+#gnome-terminal --tab --title="FFXIAHBOT"  -- bash -c "cd "$ah_dir";uv run ffxiahbot broker --inp-csv items.csv --buy-items --sell-items; exec bash"
